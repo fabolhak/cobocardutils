@@ -22,3 +22,21 @@ An CoboCards Api Key and your credentials are required to use this script (see s
 ### Usage
 
 `python3 CoboCardsRestBackup.py`
+
+## Export Backuper
+
+Simple backup script ([Jupyter Notebook](https://jupyter.org/)) to save all cardsets using the export function of Cobocards.
+
+The exported XML files are encoded in the internal CoboCards Markup languange and can be reimported. They also include images. Latex formulars are included as source code in the card content.
+
+### Dependencies
+
+The script uses [Selenium](https://selenium-python.readthedocs.io/) and a [Chrome driver](https://chromedriver.storage.googleapis.com/index.html) to crawl through all cardsets and export them automatically.
+
+### Credentials
+
+A CoboCards username and password is required.
+
+### Usage
+
+Open it as a [jupyter notebook](https://jupyter.org/) and execute all fields.
