@@ -1,0 +1,7 @@
+.ipynb_checkpoints/*
+
+microsoft_graph_authenticator/__pycache__/__init__\.cpython-36\.pyc
+
+microsoft_graph_authenticator/__pycache__/config\.cpython-36\.pyc
+
+microsoft_graph_authenticator/__pycache__/graphrest\.cpython-36\.pyc
