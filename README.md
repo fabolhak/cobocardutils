@@ -40,3 +40,23 @@ A CoboCards username and password is required.
 ### Usage
 
 Open it as a [jupyter notebook](https://jupyter.org/) and execute all fields.
+
+##  One Note Importer
+
+Simple importer script for Cobocard Backups to OneNote using the Microsoft [Graph API](http://graph.microsoft.com/). Data from both backup sources (see above) is required in order to preserve Latex formulars as source.
+
+### Dependencies
+
+You have to register an app in order to be able to use the script. The app must be able to access the following scopes: 
+
+* `Notes.ReadWrite.All`
+* `Notes.Read.All`
+* `Notes.Create`
+* `Notes.ReadWrite`
+* `Notes.ReadWrite.CreatedByApp`
+
+After registering, insert the cliend id and secret in the `./microsoft_graph_authenticator/config.py` file. 
+
+### Usage
+
+Open it as a [jupyter notebook](https://jupyter.org/) and execute all fields.
