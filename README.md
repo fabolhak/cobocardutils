@@ -47,7 +47,15 @@ Simple importer script for Cobocard Backups to OneNote using the Microsoft [Grap
 
 ### Dependencies
 
-You have to register an app in order to be able to use the script. The app must be able to access the following scopes: 
+You have to register an [app](https://apps.dev.microsoft.com) in order to be able to use the script. 
+
+1. Choose a name of the app.
+
+2. Generate a new application secret and insert the password / public key & (application) id in the `./microsoft_graph_authenticator/config.py` file. 
+
+3. Add a new platform with a redirect URL to `http://localhost:5000/login/authorized`.
+
+4. Add permissions for the following scopes: 
 
 * `Notes.ReadWrite.All`
 * `Notes.Read.All`
@@ -55,8 +63,15 @@ You have to register an app in order to be able to use the script. The app must 
 * `Notes.ReadWrite`
 * `Notes.ReadWrite.CreatedByApp`
 
-After registering, insert the cliend id and secret in the `./microsoft_graph_authenticator/config.py` file. 
+5. Save
+
 
 ### Usage
 
 Open it as a [jupyter notebook](https://jupyter.org/) and execute all fields.
+
+
+### Known Issues
+
+* #'s in latex formulars brake the code -> just don't use them in formulars
+* latex formulars are not converted to microsoft formulars automatically -> actually Microsoft published a [Tex importer for Office](https://blogs.msdn.microsoft.com/murrays/2017/07/30/latex-math-in-office/). However, I can't find a way to access it from the graph API :(
